@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1 style="color: antiquewhite;background: linear-gradient(120deg,slateblue,deeppink);">if ...else if... else if ....else</h1>
+
+	<h2 style="background:lavenderblush;">It provide facility to select one option from available multiple option,this selection will be based on given condition</h2>
+
+	<h3 style="color:paleturquoise;background-color: silver;">One if the number is applied if any number of else if blocks.If a condition is evaluated as true then statement available in if else scope would execute and ,
+
+	if the condition is false then condition available in if else scope then statement will available in else scope will be executed </h3>
+
+	<h1 style="color:sienna;text-align: center;">Program to develop calculator by using if else scope</h1>
+
+	<script type="text/javascript">
+		var x=125;
+		var y=150;
+		var z=175;
+		var op="+";
+
+		if(op=="+")
+		{
+			document.write("Result="+(x+y+z));
+		}
+		else if(op=="-")
+		{
+			document.write("Result="+(x+y-z));
+		}
+		else if(op=="*")
+		{
+			document.write("Result="+(x*y*z));
+		}
+		else if(op=="/")
+		{
+			document.write("Result="+(x*y/z));
+		}
+		else if(op=="%")
+		{
+			document.write("Result="+(x*y%z));
+		}
+		else
+		{
+			document.write("Invalid operator!! Please try again")
+		}
+	</script>
+
+	<h1 style="background:linear-gradient(120deg,blue,red);color: ghostwhite;text-align: center;">Nested if statement</h1>
+
+	<h1 style="color:cadetblue;background-color: lightpink;text-align: center;">if an if statement found inside in another if or else scope then statement will be executed in nested if .The condition will execute only if the given condition of outer will be true  </h1>
+
+	<h2 style="background:linear-gradient(120deg,orange,paleturquoise);text-align: center;">Program to find biggest number amoung given condition</h2>
+
+	<script type="text/javascript">
+		var x=250;
+		var y=350;
+		var z=450;
+
+		if(x>y)
+		{
+			if(x>z)
+			{
+				document.write("Biggest number is"+x);
+			}
+			else
+			{
+				document.write("Biggest number is"+z);
+			}
+		}
+		else
+		{
+			if(y>z)
+			{
+				document.write("Biggest number is"+y);
+			}
+			else
+			{
+				document.write("Biggest number is"+z);
+			} 
+		}
+	</script>
+
+</body>
+</html>

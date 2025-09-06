@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#mainpage{
+			width: 900px;
+			height: 1200px;
+			background-color: lightgreen;
+			position: relative;
+			left: 200px;
+		}
+
+		#mainpage > #menu{
+			line-height: 70px;
+			width: 1200px;
+			background-color: red;
+			position: fixed;
+			z-index: 4;
+		}
+		
+
+		#mainpage > #main_content{
+			width: 900px;
+			line-height: 600px;
+			background-color: orange;
+			position: absolute;
+			top: 80px;
+			z-index: 4;
+		}
+		#mainpage > #menu > ul{
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+		}
+		#mainpage > #menu > ul> li{
+			width: 176px;
+			float: left;
+			border: 2px solid white;
+			text-align: center;
+			background-color: mediumaquamarine;
+			text-decoration: none;
+		}
+		#mainpage > #menu > ul> li >a{
+			text-decoration: none;
+			display: block;
+		}
+
+		#mainpage > #menu > ul> li >a:hover{
+			background-color: lightcoral;
+			color: white;
+			letter-spacing: 3px;
+			text-shadow: 3px 3px 4px yellow;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="mainpage">
+
+		<div id="menu">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">About us</a></li>
+				<li><a href="">Our services</a></li>
+				<li><a href="">Contact us</a></li>
+				<li><a href="">Board Members</a></li>
+			</ul>
+		</div>
+
+		<div id="main_content">
+			<h1>This is for main content</h1>
+		</div>
+		
+	</div>
+
+</body>
+</html>

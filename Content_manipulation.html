@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function f1()
+		{
+			var x=document.getElementsByTagName("h1");
+			var y=document.getElementsById("myid");
+			var z=document.getElementsByClassName("myclass");
+
+			z[0].innerHTML="This is an update with class";
+		}
+	</script>
+
+
+</body>
+<h1 id="myid" class="myclass" style="color: thistle;text-align: center;">This is old heading</h1>
+
+<h2 onclick="f1()" style="color: forestgreen;text-align: center;background:linear-gradient(120deg,red,yellow);">Click here to changecontent of above heading</h2>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function f1()
+		{
+			alert("You just click the heading");
+		}
+		function f2()
+		{
+			alert("You just double click the heading");
+		}
+		function f3()
+		{
+			console.log("You have enter here");
+		}
+		function f4()
+		{
+			console.log("Your mouse goes out from the heading");
+		}
+		function f5()
+		{
+			console.log("You have out means leave from heading");
+		}
+	</script>
+
+	<style type="text/css">
+		.mydiv
+		{
+			width: 600px;
+			height: 100px;
+			background: linear-gradient(120deg,purple,grey);
+			padding: 100px;
+			margin-left: 350px;
+		}
+	</style>
+
+</head>
+<body>
+	 <h1 onclick="f1()" style="text-align: center;color: darkblue;background: linear-gradient(120deg,mediumturquoise,yellow);">Please click here to run custom function</h1>
+
+	 <h1 ondblclick="f2()" style="text-align:center;color: mediumturquoise;">Please double click to run custom function</h1>
+
+	  <h1 style="text-align:center;color: yellow;background: palevioletred;" onmouseenter="f3()" onmouseout="f4()">Please place your mouse here to see the magic</h1>
+
+	  <div class="mydiv" onmouseleave="f5()" style="color:ghostwhite;background: linear-gradient(120deg,black,palevioletred);text-align: center;">
+	  	<form >
+	  		Name:<input type="text" name=""><br>
+	  		<input type="submit" name="">
+	  	</form>
+	  </div>
+
+</body>
+</html>

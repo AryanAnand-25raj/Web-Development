@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function f1()
+		{
+			var x=document.getElementsByTagName("h1");
+			x[0].style.color="darkcyan";
+
+			
+		}
+		function f2()
+		{
+			var x=document.getElementsByTagName("h1");
+			x[0].style.backgroundColor="pink";
+		}
+		function f3()
+		{
+			var x=document.getElementsByTagName("h1");
+			x[0].style.display="none";
+
+			var b=document.getElementsByTagName("button");
+			b[0].style.display="none";
+			b[1].style.display="none";
+		}
+		function f4()
+		{
+			var x=document.getElementsByTagName("h1");
+			x[0].style.display="block";
+			var b=document.getElementsByTagName("button");
+			b[0].style.display="inline";
+			b[1].style.display="inline";
+		}
+
+	</script>
+</head>
+<body>
+	<h1>This is Aryan Heading</h1>
+
+	<button onclick="f1()">Apply color to Heading</button>
+	<button onclick="f2()">Apply Background Color Pink</button>
+	<button onclick="f3()">Hide above Heading</button>
+	<button onclick="f4()">Show above heading</button>
+
+</body>
+</html>

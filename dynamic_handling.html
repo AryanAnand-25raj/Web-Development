@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function f1()
+		{
+			var i=document.getElementsByClassName("Revisioninput");
+			var h=document.getElementById("Revisionheading");
+			h.innerHTML=i[0].value;
+		}
+		function f3()
+		{
+			var i=document.getElementsByClassName("Revisioninput")[1];
+			var h=document.getElementById("Revisionheading");
+			h.style.color=i.value;
+		}
+	</script>
+</head>
+<body>
+	<h1 id="Revisionheading"></h1>
+
+	<form>
+		<input oninput="f1()" type="text" name="" class="Revisioninput" placeholder="Enter_Your_Content"><br><br>
+		Select_Color_For_Above_Heading
+		<input type="color" name="" oninput="f3()" class="Revisioninput">
+	</form>
+
+</body>
+</html>

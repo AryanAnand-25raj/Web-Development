@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$(".first").on("click",function(){
+
+				$("#revision_h1").html("This is Updated content with help of jquery");
+			});
+
+			$(".second").on("click",function(){
+				$("#revision_h1").css("color","silver");
+				$("#revision_h1").css("background",'linear-gradient(120deg,red,orange)');
+				$("#revision_h1").css("text-align",'center');
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1 id="revision_h1">Aryan Heading for jquery revision</h1>
+
+	<button class="first">How to Change content heading in JavaScript_JQUERY</button>
+	<button class="second">How to change color heading in javascript_JQuery</button>
+
+</body>
+</html>

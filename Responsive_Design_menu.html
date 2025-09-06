@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.menu{
+			display: flex;
+		}
+		.menu > .submenu
+		{
+			width: 400px;
+			line-height: 70px;
+			background-color: sandybrown;
+			text-align: center;
+			border: 1px double royalblue;
+		}
+		.menu > .submenu >a{
+			text-decoration: none;
+			display: block;
+		}
+		.first{
+			flex-grow: 5;
+		}
+		.main_content{
+			display: flex;
+			width: 100%;
+			height: 560px;
+
+			margin-top: 10px;
+		}
+		.main_content > .sidebar{
+			background-color: lightslategray;
+			flex: 3.5;
+		}
+		.main_content > .content{
+			background-color: deeppink;
+			flex: 3.5;
+		}
+		.footer{
+			display: flex;
+		}
+		.footer > .footer_content{
+			flex: 4;
+			line-height: 50px;
+			background-color: darkcyan;
+			color: ghostwhite;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<div class="submenu">
+			<a href="">Home</a>
+		</div>
+		<div class="submenu">
+			<a href="">Car/Bike Models[CC/Battery_warient]</a>
+		</div>
+		<div class="submenu">
+			<a href="">Our Services</a>
+		</div>
+		<div class="submenu .first">
+			<a href="">Contact us</a>
+		</div>
+	</div>
+<div class="main_content">
+	<div class="sidebar">
+		
+	</div>
+	<div class="content">
+		
+	</div>
+	
+</div>
+
+<div class="footer">
+	<div class="footer_content">
+		<marquee>Welcome to bike/scooter Brand</marquee>
+	</div>
+</div>	
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		form
+		{
+			background-color: goldenrod;
+
+			width: 500px;
+			height: 300px;
+			padding-left: 100px;
+			position: relative;
+			left: 400px;
+		}
+		form> input
+		{
+			display: block;
+			margin-bottom: 5px;
+		}
+	</style>
+	<script type="text/javascript">
+		function f1()
+		{
+			var e=document.getElementsByTagName("input")[0];
+			var p=document.getElementsByTagName("input")[1];
+			var atindex=e.value.indexof("@");
+			var dotindex=e.value.lastIndexof(".");
+		}
+		if(e.value=length==0)
+		{
+			alert("Email should not be empty"+atindex);
+			return false;
+		}
+		else if(atindex<=0)
+		{
+			alert("@ is missing or at first position");
+			return false;
+		}
+		else if(atindex==e.value.length-1)
+		{
+			alert("@ is at end of email not accepted");
+			return false;
+		}
+		else if(dotindex!=e.value.length-4 || dotindex=atindex+1 || dotindex=atindex-1)
+		{
+			alert(". is at wrong position");
+			return false;
+		}
+		else if(p.value.length<8)
+		{
+			alert("Password should be more than 6 characters");
+			return false;
+		}
+	</script>
+ </head>
+<body>
+
+	<form action="Revision_process.php" onsubmit="return f1()">
+		<h1 style="color: indianred  ;text-align:center;">Login Form </h1>
+		User Name<input type="text" name="" placeholder="Write_Email"placeholder="required" style="text-align:left;width: 80%;">
+		password<input type="text" name="" placeholder="Enter_password" placeholder="required" style="text-align:center;">
+		<input type="submit" name="" value="Login">
+	</form>    
+
+</body>
+</html>

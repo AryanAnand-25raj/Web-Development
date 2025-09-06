@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function f1()
+		{
+			var button=document.getElementsByTagName("button")[0];
+			var i=document.getElementsByClassName("Aryanimg");
+			if(button.innerHTML=="Show")
+			{
+				i[0].style.display="block";
+				button.innerHTML="Hide";
+			}
+			else
+			{
+				i[0].style.display="none";
+				button.innerHTML="Show";
+			}
+		}
+
+		function f2()
+		{
+			var i=document.getElementsByClassName("Aryanimg");
+			i[0].width=i[0].width+10;
+			i[0].height=i[0].height+10;
+		}
+	</script>
+	<style type="text/css">
+		img
+		{
+			display: none;
+			margin-bottom: 20px;
+			border: 2px dashed olive;
+		}
+	</style>
+</head>
+<body>
+	<img class="Aryanimg" src="Aryan_image.jpg" width="400px" height="500px">
+	<button onclick="f1()">Show</button>
+	<button onclick="f2()">Zoom In</button>
+
+</body>
+</html>
