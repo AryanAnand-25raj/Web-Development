@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Application for Registration in college</title>
+	<style type="text/css">  
+		body{
+			background:linear-gradient(120deg,lightblue,orange);
+		}
+		form
+		{
+			color: royalblue;
+		} 
+	</style>
+</head>
+<body>
+	<h1 style="color:goldenrod;text-align: center;">Number of course Offered by colleges</h1>
+	<form action="User_form_with_css.php" method="post">
+		Name:<input type="text" name="Enter_your_Name" placeholder="required"><br><br>
+		Age:<input type="text" name="Enter_your_Age" placeholder="required"><br><br>
+		DOB:<input type="date" name="date"><br>
+		Gender:<select>
+			<option>Male</option>
+			<option>Female</option>
+		</select><br><br>
+		Skills:
+		<input type="checkbox" name="" value="BBA">BBA
+		<input type="checkbox" name="" value="BCA">BCA
+		<input type="checkbox" name="" value="Btech">Btech
+		<input type="checkbox" name="" value="Ba">Ba
+		<input type="checkbox" name="" value="Mtech">Mtech
+		<br><br>
+		FEE MODE <input type="radio" name="jt">Full payment
+		<input type="radio" name="jt">Scholarship
+		FEE mode for normal student<input type="range" name="" min="100000" max="250000">2500000<br><br>
+		FEE mode for scholarship student<input type="range" name="" min="40000" max="80000">80000<br><br>
+		About Yourself:<br><textarea rows="3" cols="70" placeholder="For Any query contact on given number.(IF number is not connect then be patient we should be inform you with email address"></textarea><br><br>
+		<input type="submit" name="" value="Apply for Addmission">
+
+
+	</form>
+
+
+</body>
+</html>
